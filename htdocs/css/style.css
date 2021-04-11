@@ -15,3 +15,12 @@ footer {
     min-height: 4em;
     text-align: center;
 }
+
+i {
+    font-size: 50px;
+    color: rgb(0, 77, 148);    
+}
+
+.hidden {
+    display: none;
+}

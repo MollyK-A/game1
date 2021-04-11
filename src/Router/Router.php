@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Mos\Router;
+namespace moan20\Router;
 
-use function Mos\Functions\{
+use function moan20\Functions\{
     destroySession,
     redirectTo,
     renderView,
@@ -20,6 +20,11 @@ class Router
 {
     public static function dispatch(string $method, string $path): void
     {
+        $_SESSION['matchNumber'] = $_SESSION['matchNumber'] ?? 0;
+        if (isset($_POST['newGame'])) {
+            $_SESSION['matchNumber'] += 1;
+        }
+        
         if ($method === "GET" && $path === "/") {
             $data = [
                 "header" => "Index page",
@@ -54,6 +59,40 @@ class Router
                 "message" => "Hey, edit this to do it youreself!",
             ];
             $body = renderView("layout/page.php", $data);
+            sendResponse($body);
+            return;
+        } else if ($method === "GET" && $path === "/game21") {
+            $_SESSION['currentGame'] = new \moan20\Dice\Game();
+            $data = [
+                "header" => "Spela 21!",
+                "message" => "Välj hur många tärningar du vill spela med.",
+                "currentGame" => $_SESSION['currentGame']
+            ];
+
+            $_SESSION['currentGame'] = new \moan20\Dice\Game();
+            $body = renderView("layout/game21.php", $data);
+            sendResponse($body);
+
+            return;
+        } else if ($method === "POST" && $path === ("/game21?match_nr=" . $_SESSION['matchNumber'])) {
+        
+            $data = [
+                "header" => "Spela 21!",
+                "message" => "Välj hur många tärningar du vill spela med.",
+                "currentGame" => $_SESSION['currentGame']
+            ];
+
+            $body = renderView("layout/game21.php", $data);
+            sendResponse($body);
+            return;
+        } else if ($method === "POST" && $path === "/game21?reset") {
+            $data = [
+                "header" => "Poängtavlan är nollställd",
+                "message" => "Börja om från början, börja om på nytt... ♩ ♪ ♫ ♬",
+            ];
+
+            $body = renderView("layout/page.php", $data);
+            $_SESSION['currentGame']->resetScoreboard();
             sendResponse($body);
             return;
         }

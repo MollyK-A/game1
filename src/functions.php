@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mos\Functions;
+namespace moan20\Functions;
 
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;

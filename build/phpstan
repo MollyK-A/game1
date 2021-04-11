@@ -1,0 +1,10 @@
+ ------ ------------------------------------------------------------------------- 
+  Line   src/Dice/GraphicDiceHand.php                                             
+ ------ ------------------------------------------------------------------------- 
+  16     Access to an undefined property moan20\Dice\GraphicDiceHand::$numDices.  
+  28     Access to an undefined property moan20\Dice\GraphicDiceHand::$numDices.  
+  53     Access to an undefined property moan20\Dice\GraphicDiceHand::$numDices.  
+ ------ ------------------------------------------------------------------------- 
+
+ [ERROR] Found 3 errors                                                             
+

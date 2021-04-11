@@ -6,8 +6,8 @@
 
 declare(strict_types=1);
 
-use Mos\Router\Router;
-use function Mos\Functions\getRoutePath;
+use moan20\Router\Router;
+use function moan20\Functions\getRoutePath;
 
 /**
  * Bootstrapping
@@ -17,11 +17,11 @@ use function Mos\Functions\getRoutePath;
 // Get a defined to point at the installation directory
 define("INSTALL_PATH", realpath(__DIR__ . "/.."));
 
-// Load the inital configuration
-require INSTALL_PATH . "/config/bootstrap.php";
-
 // Get the autoloader
 require INSTALL_PATH . "/vendor/autoload.php";
+
+// Load the inital configuration
+require INSTALL_PATH . "/config/bootstrap.php";
 
 
 
