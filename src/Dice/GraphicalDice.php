@@ -38,7 +38,7 @@ class GraphicalDice
             5 => 'five',
             6 => 'six'
         );
-
+        
         return '<i class="fas fa-dice-' . $diceWords[$number] . '"></i>';
     }
 }

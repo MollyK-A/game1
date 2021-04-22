@@ -25,7 +25,7 @@ class Game
     public $matchIndex;
     public $done;
 
-    function __construct() 
+    public function __construct() 
     {
         $this->done = false;
         $this->userScore = 0;
@@ -35,7 +35,7 @@ class Game
         $_SESSION['scoreboard'][$this->matchIndex] = null;
     }
 
-    function makeMove($numDices): void 
+    public function makeMove($numDices): void 
     {
         $this->userHand = new GraphicDiceHand($numDices);
 
@@ -47,7 +47,7 @@ class Game
         $this->checkGameResult();
     }
 
-    function deliverResult(): string 
+    public function deliverResult(): string 
     {
         // if ($this->result === 'User won') {
         if ($_SESSION['scoreboard'][$this->matchIndex] === 'user') {
@@ -62,7 +62,7 @@ class Game
         }
     }
 
-    function checkGameResult(): void 
+    public function checkGameResult(): void 
     {
         if ($this->userScore === 21) {
             // $this->result = 'User won';
@@ -73,18 +73,18 @@ class Game
         }
     }
 
-    function saveToScoreboard($winner, $index): void 
+    public function saveToScoreboard($winner, $index): void 
     {
 	    $_SESSION['scoreboard'][$index] = $winner;
     }
 
-    function resetScoreboard(): void 
+    public function resetScoreboard(): void 
     {
         $this->matchIndex = 0;
         $_SESSION['scoreboard'] = [];
     }
 
-    function computerPlayGame(): string 
+    public function computerPlayGame(): string 
     {
         $_SESSION['computerScore'] = 0;
         $die = new Dice();
@@ -108,7 +108,7 @@ class Game
         }
     }
 
-    function compareResults(): string 
+    public function compareResults(): string 
     {
         if ($_SESSION['computerScore'] > $this->userScore) {
             // $this->result = 'Computer won';
@@ -125,7 +125,7 @@ class Game
         }
     }
 
-    function newGame(): void 
+    public function newGame(): void 
     {
         // $this->matchIndex += 1;
         $_SESSION['userScore'] = 0;
@@ -134,5 +134,4 @@ class Game
         $_SESSION['scoreboard'][$this->matchIndex] = null;
         $this->done = false;
     }
-
 }

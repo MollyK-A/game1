@@ -74,17 +74,16 @@ class Router
             sendResponse($body);
 
             return;
-        } else if ($method === "POST" && $path === ("/game21?match_nr=" . $_SESSION['matchNumber'])) {
-        
-            $data = [
-                "header" => "Spela 21!",
-                "message" => "Välj hur många tärningar du vill spela med.",
-                "currentGame" => $_SESSION['currentGame']
-            ];
+        // } else if ($method === "POST" && $path === ("/game21?match_nr=" . $_SESSION['matchNumber'])) {
+        //     $data = [
+        //         "header" => "Spela 21!",
+        //         "message" => "Välj hur många tärningar du vill spela med.",
+        //         "currentGame" => $_SESSION['currentGame']
+        //     ];
 
-            $body = renderView("layout/game21.php", $data);
-            sendResponse($body);
-            return;
+        //     $body = renderView("layout/game21.php", $data);
+        //     sendResponse($body);
+        //     return;
         } else if ($method === "POST" && $path === "/game21?reset") {
             $data = [
                 "header" => "Poängtavlan är nollställd",
