@@ -1,19 +1,43 @@
 body {
-    overflow-y: scroll;
-    width: 800px;
+    /* overflow-y: scroll; */
+    width: 80%;
     margin: 8px auto;
     padding-left: 1em;
     border-left: 1px solid #ccc;
+    display: grid;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(5, 20%);
+    max-height: 100%;
+}
+
+header {
+    background-color: rgb(170, 218, 219);
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
 }
 
 main {
     min-height: 20em;
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 8;
+    padding-bottom: 5em;
 }
 
 footer {
     border-top: 1px solid #ccc;
     min-height: 4em;
     text-align: center;
+    grid-column: 1 / span 5;
+    grid-row: 10 / span 1;
+
 }
 
 i {
@@ -24,3 +48,52 @@ i {
 .hidden {
     display: none;
 }
+
+/* Center tables for demo */
+table {
+    margin: 0 auto;
+  }
+  
+  /* Default Table Style */
+table {
+    color: #333;
+    background: white;
+    border: 1px solid grey;
+    font-size: 12pt;
+    /* border-collapse: collapse; */
+}
+
+table thead th,
+table tfoot th {
+    color: #777;
+    background: rgba(0,0,0,.1);
+}
+table caption {
+    padding:.5em;
+}
+table th,
+table td {
+    padding: .5em;
+    border: 1px solid lightgrey;
+}
+
+#yatzy {
+    display: grid;
+    grid-gap: 4%;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+#yatzy-info {
+    grid-column: 1;
+}
+
+#yatzy-dices {
+    grid-column: 2;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#yatzy-table {
+    grid-column: 3;
+}
+

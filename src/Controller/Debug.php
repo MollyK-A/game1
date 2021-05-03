@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace moan20\Controller;
+namespace Mos\Controller;
 
 use Nyholm\Psr7\Response;
 use Nyholm\Psr7\Stream;

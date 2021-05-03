@@ -1,27 +1,24 @@
 
-FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/config/router.php
------------------------------------------------------------------------
+FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/test/Controller/ControllerYatzyTest.php
+---------------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+---------------------------------------------------------------------------------------------
+  5 | ERROR | [x] Header blocks must be separated by a single blank line
+ 37 | ERROR | [x] Whitespace found at end of line
+ 40 | ERROR | [x] TRUE, FALSE and NULL must be lowercase; expected "true" but found "TRUE"
+---------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------------
+
+
+FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/test/Controller/ControllerFormTest.php
+--------------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------
- 43 | ERROR | [x] Expected 1 blank line at end of file; 2 found
------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+ 12 | ERROR | [x] Header blocks must be separated by a single blank line
+--------------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------
-
-
-FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/view/yatzy.php
-------------------------------------------------------------------------------
-FOUND 6 ERRORS AFFECTING 6 LINES
-------------------------------------------------------------------------------
-  1 | ERROR | [x] Header blocks must be separated by a single blank line
- 23 | ERROR | [x] Short PHP opening tag used; expected "<?php" but found "<?"
- 27 | ERROR | [x] Short PHP opening tag used; expected "<?php" but found "<?"
- 30 | ERROR | [x] Short PHP opening tag used; expected "<?php" but found "<?"
- 33 | ERROR | [x] Short PHP opening tag used; expected "<?php" but found "<?"
- 36 | ERROR | [x] Short PHP opening tag used; expected "<?php" but found "<?"
-------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/view/game21.php
@@ -40,49 +37,29 @@ PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------
 
 
-FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/view/game21-old.php
--------------------------------------------------------------------------
-FOUND 10 ERRORS AFFECTING 6 LINES
--------------------------------------------------------------------------
-  1 | ERROR | [x] Header blocks must be separated by a single blank line
-  2 | ERROR | [x] Header blocks must be separated by a single blank line
- 41 | ERROR | [x] Newline required after opening brace
- 41 | ERROR | [x] Closing brace must be on a line by itself
- 49 | ERROR | [x] Newline required after opening brace
- 49 | ERROR | [x] Closing brace must be on a line by itself
- 54 | ERROR | [x] Newline required after opening brace
- 54 | ERROR | [x] Closing brace must be on a line by itself
- 60 | ERROR | [x] Newline required after opening brace
- 60 | ERROR | [x] Closing brace must be on a line by itself
--------------------------------------------------------------------------
-PHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------
-
-
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/Game.php
------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 FOUND 16 ERRORS AFFECTING 15 LINES
------------------------------------------------------------------------------------------
-  14 | ERROR | [ ] The class-based use imports must follow the namespace declaration in
-     |       |     the file header
+--------------------------------------------------------------------------------------------------------
+  12 | ERROR | [ ] The class-based use imports must follow the namespace declaration in the file header
+  12 | ERROR | [x] Import statements must not begin with a leading backslash
+  13 | ERROR | [x] Import statements must not begin with a leading backslash
   14 | ERROR | [x] Import statements must not begin with a leading backslash
-  15 | ERROR | [x] Import statements must not begin with a leading backslash
-  16 | ERROR | [x] Import statements must not begin with a leading backslash
-  28 | ERROR | [x] Whitespace found at end of line
-  38 | ERROR | [x] Whitespace found at end of line
-  46 | ERROR | [x] Whitespace found at end of line
-  50 | ERROR | [x] Whitespace found at end of line
-  65 | ERROR | [x] Whitespace found at end of line
-  76 | ERROR | [x] Whitespace found at end of line
-  78 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
-  81 | ERROR | [x] Whitespace found at end of line
-  87 | ERROR | [x] Whitespace found at end of line
- 111 | ERROR | [x] Whitespace found at end of line
- 117 | ERROR | [x] Whitespace found at end of line
- 128 | ERROR | [x] Whitespace found at end of line
------------------------------------------------------------------------------------------
+  26 | ERROR | [x] Whitespace found at end of line
+  36 | ERROR | [x] Whitespace found at end of line
+  44 | ERROR | [x] Whitespace found at end of line
+  48 | ERROR | [x] Whitespace found at end of line
+  63 | ERROR | [x] Whitespace found at end of line
+  74 | ERROR | [x] Whitespace found at end of line
+  76 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+  79 | ERROR | [x] Whitespace found at end of line
+  85 | ERROR | [x] Whitespace found at end of line
+ 109 | ERROR | [x] Whitespace found at end of line
+ 115 | ERROR | [x] Whitespace found at end of line
+ 126 | ERROR | [x] Whitespace found at end of line
+--------------------------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 15 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/DiceHand.php
@@ -98,28 +75,26 @@ PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php
------------------------------------------------------------------------------------------
-FOUND 13 ERRORS AFFECTING 11 LINES
------------------------------------------------------------------------------------------
-  14 | ERROR | [ ] The class-based use imports must follow the namespace declaration in
-     |       |     the file header
+------------------------------------------------------------------------------------------------------------------------
+FOUND 14 ERRORS AFFECTING 13 LINES
+------------------------------------------------------------------------------------------------------------------------
+  12 | ERROR | [ ] The class-based use imports must follow the namespace declaration in the file header
+  12 | ERROR | [x] Import statements must not begin with a leading backslash
+  13 | ERROR | [x] Import statements must not begin with a leading backslash
   14 | ERROR | [x] Import statements must not begin with a leading backslash
   15 | ERROR | [x] Import statements must not begin with a leading backslash
-  16 | ERROR | [x] Import statements must not begin with a leading backslash
-  17 | ERROR | [x] Import statements must not begin with a leading backslash
   32 | ERROR | [x] Whitespace found at end of line
-  61 | ERROR | [x] Whitespace found at end of line
-  63 | ERROR | [x] Whitespace found at end of line
-  99 | ERROR | [x] Whitespace found at end of line
- 100 | ERROR | [x] Function closing brace must go on the next line following the body;
-     |       |     found 1 blank lines before brace
- 114 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 120 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 120 | ERROR | [x] The closing brace for the class must go on the next line after the
-     |       |     body
------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 12 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------------------------
+  89 | ERROR | [x] Whitespace found at end of line
+ 103 | ERROR | [x] Expected 1 space(s) after FOREACH keyword; 0 found
+ 117 | ERROR | [x] Whitespace found at end of line
+ 118 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before brace
+ 135 | ERROR | [x] Expected 1 space(s) after FOREACH keyword; 0 found
+ 145 | ERROR | [x] Expected 1 space(s) after FOREACH keyword; 0 found
+ 149 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before brace
+ 159 | ERROR | [x] Expected 1 space(s) after FOREACH keyword; 0 found
+------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 13 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------------------------------------
 
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/GraphicalDice.php
@@ -136,8 +111,8 @@ FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/GraphicDiceHand.p
 ----------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------------------
- 37 | ERROR | [x] Whitespace found at end of line
- 53 | ERROR | [x] Whitespace found at end of line
+ 38 | ERROR | [x] Whitespace found at end of line
+ 54 | ERROR | [x] Whitespace found at end of line
 ----------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------------------
@@ -145,26 +120,15 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Yatzy.php
 ------------------------------------------------------------------------------
-FOUND 5 ERRORS AFFECTING 5 LINES
+FOUND 4 ERRORS AFFECTING 4 LINES
 ------------------------------------------------------------------------------
   8 | ERROR | [x] Header blocks must not contain blank lines
  18 | ERROR | [x] Header blocks must be separated by a single blank line
- 45 | ERROR | [x] Whitespace found at end of line
- 50 | ERROR | [x] Whitespace found at end of line
- 59 | ERROR | [x] Whitespace found at end of line
+ 52 | ERROR | [x] Whitespace found at end of line
+ 64 | ERROR | [x] Whitespace found at end of line
 ------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------
 
-
-FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Router/Router-old.php
--------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------
- 27 | ERROR | [x] Whitespace found at end of line
--------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------
-
-Time: 345ms; Memory: 6MB
+Time: 286ms; Memory: 8MB
 

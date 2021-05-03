@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace moan20\Controller;
+namespace Mos\Controller;
 
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7\Response;

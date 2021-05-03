@@ -10,9 +10,9 @@ När du är klar har du gjort refactoring på din kod från kmom01 och anpassat 
 
 [x] Implementera en (eller flera) controller för att spela spelet i ramverket.
 
-Skapa ett flödesschema som representerar hur du tänker lösa (del av) spelet. Spara som doc/yatzy/flowchart.{md,pdf,png} och gör till en del av ditt repo.
+[x]Skapa ett flödesschema som representerar hur du tänker lösa (del av) spelet. Spara som doc/yatzy/flowchart.{md,pdf,png} och gör till en del av ditt repo.
 
-Skapa psudokod som visar hur du tänker lösa (del av) spelet. Spara som doc/yatzy/psuedocode.{md,pdf,png} och gör till en del av ditt repo.
+[x]Skapa psudokod som visar hur du tänker lösa (del av) spelet. Spara som doc/yatzy/psuedocode.{md,pdf,png} och gör till en del av ditt repo.
 
 [x] Man skall rulla sina tärningar, välja vilka man sparar, och slå om. Man har tre slag och fem tärningar. En vanlig Yatzy-omgång helt enkelt.
 
@@ -49,4 +49,15 @@ router: ser till att url-en finns.
 controller/yatzy: hanterar vad som händer när routern hänvisar till url-en. Renderar nästa vy?
 
 
+Post skickar save as-numret
+en metod beräknar tärningsvärdet av alla tärningars senaste slag och sparar i rätt kolumn, troligtvis via en array.
 
+
+for dice in dices:
+    if (toStr(dice.getlastroll) == saveAs) {
+        sum += dice.getlastroll;
+    }
+
+savedValues[saveAs] = sum
+
+Varför sparas inte värdet i savedvalues?

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace moan20\Controller;
+namespace Mos\Controller;
 
 use Nyholm\Psr7\Response;
 use Nyholm\Psr7\Stream;
@@ -17,10 +17,10 @@ use function moan20\Functions\{
     url
 };
 
-
 class Yatzy
 {
     public $currentYatzy;
+    public $dices;
 
     public function index(): ResponseInterface
     {
@@ -31,6 +31,7 @@ class Yatzy
         $data = [
             "header" => "Yatzy",
             "message" => "Play yatzy with yaself",
+            'traits' => $_SESSION['currentYatzy']->formDiceTraits,
             // "dices" => $_SESSION['currentYatzy']->dices,
             "currentYatzy" => $_SESSION['currentYatzy']
         ];
@@ -46,9 +47,7 @@ class Yatzy
     {
         // $this->currentYatzy = new YatzyGame();
         $psr17Factory = new Psr17Factory();
-
-        
-        $dices = array();
+        $this->dices = array();
 
         $diceNames = [
             'd1',
@@ -60,11 +59,30 @@ class Yatzy
 
         foreach ($diceNames as $d) {
             if (isset($_POST[$d])) {
-                array_push($dices, $d);
+                array_push($this->dices, $d);
             }
         }
 
-        $_SESSION['currentYatzy']->playGame($dices);
+        $_SESSION['currentYatzy']->playGame($this->dices);
+
+        $data = [
+            "header" => "Yatzy",
+            "message" => "Play yatzy with yaself",
+            // "dices" => $_SESSION['currentYatzy']->dices,
+            "currentYatzy" => $_SESSION['currentYatzy']
+        ];
+
+        $body = renderView("layout/yatzy.php", $data);
+
+        return (new Response())
+            ->withStatus(301)
+            ->withHeader("Location", url("/yatzy"));
+    }
+
+    public function newRound(): ResponseInterface
+    {
+        // var_dump($_POST['save']);
+        $_SESSION['currentYatzy']->newRound($_POST['save']);
 
         $data = [
             "header" => "Yatzy",

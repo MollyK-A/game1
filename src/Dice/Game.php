@@ -5,9 +5,7 @@ declare(strict_types=1);
 namespace moan20\Dice;
 
 use function moan20\Functions\{
-    redirectTo,
     renderView,
-    sendResponse,
     url
 };
 
@@ -75,7 +73,7 @@ class Game
 
     public function saveToScoreboard($winner, $index): void 
     {
-	    $_SESSION['scoreboard'][$index] = $winner;
+        $_SESSION['scoreboard'][$index] = $winner;
     }
 
     public function resetScoreboard(): void 

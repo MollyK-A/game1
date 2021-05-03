@@ -20,7 +20,4 @@ EOD;
 var_dump(session_name());
 var_dump($_SESSION);
 
-echo "<br><br><br><br>";
-var_dump($_SESSION['currentYatzy']);
-
 $_SESSION["counter"] = 1 + ($_SESSION["counter"] ?? 0);

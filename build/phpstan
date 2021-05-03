@@ -1,29 +1,3 @@
- ------ ---------------------------------------- 
-  Line   config/router.php                       
- ------ ---------------------------------------- 
-  18     Variable $router might not be defined.  
-  23     Variable $router might not be defined.  
-  24     Variable $router might not be defined.  
-  25     Variable $router might not be defined.  
-  31     Variable $router might not be defined.  
-  36     Variable $router might not be defined.  
-  40     Variable $router might not be defined.  
- ------ ---------------------------------------- 
 
- ------ ------------------------------------------------------------------------- 
-  Line   src/Dice/GraphicDiceHand.php                                             
- ------ ------------------------------------------------------------------------- 
-  17     Access to an undefined property moan20\Dice\GraphicDiceHand::$numDices.  
-  29     Access to an undefined property moan20\Dice\GraphicDiceHand::$numDices.  
-  54     Access to an undefined property moan20\Dice\GraphicDiceHand::$numDices.  
- ------ ------------------------------------------------------------------------- 
-
- ------ ---------------------------------------------------------------------- 
-  Line   src/Dice/YatzyGame.php                                                
- ------ ---------------------------------------------------------------------- 
-  65     Access to an undefined property moan20\Dice\YatzyGame::$currentRoll.  
-  114    Binary operation "+=" between string and string results in an error.  
- ------ ---------------------------------------------------------------------- 
-
- [ERROR] Found 12 errors                                                                 
+ [OK] No errors                                                                                                         
 

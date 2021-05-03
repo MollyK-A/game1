@@ -11,12 +11,13 @@ class GraphicDiceHand
 {
     private $dices;
     public $sum;
+    public $numDices;
 
-    public function __construct($numDices)
+    public function __construct($numDicesRec)
     {
-        $this->numDices = $numDices;
+        $this->numDices = $numDicesRec;
 
-        for ($i = 1; $i <= $numDices; $i++) {
+        for ($i = 1; $i <= $this->numDices; $i++) {
             $this->dices[$i] = new GraphicalDice();
         }
     }

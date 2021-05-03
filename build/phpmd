@@ -1,18 +1,16 @@
 /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Debug.php:24	Avoid using static access to class '\Nyholm\Psr7\Stream' in method '__invoke'.
 /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Game21.php:26	Missing class import via use statement (line '26', column '40').
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Yatzy.php:48	Avoid unused local variables such as '$psr17Factory'.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Yatzy.php:76	Avoid unused local variables such as '$body'.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Yatzy.php:55	Avoid unused local variables such as '$psr17Factory'.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Yatzy.php:81	Avoid unused local variables such as '$body'.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Yatzy.php:100	Avoid unused local variables such as '$body'.
 /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/DiceHand.php:33	Avoid unused local variables such as '$len'.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/Game.php:60	The method deliverResult uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/Game.php:106	The method computerPlayGame uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/Game.php:121	The method compareResults uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:67	Avoid using undefined variables such as '$dice' which will lead to PHP notices.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:68	Avoid using undefined variables such as '$dice' which will lead to PHP notices.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:69	Avoid using undefined variables such as '$dice' which will lead to PHP notices.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:95	The method playGame uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:105	Avoid using undefined variables such as '$d' which will lead to PHP notices.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:106	Avoid using undefined variables such as '$d' which will lead to PHP notices.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:107	Avoid using undefined variables such as '$d' which will lead to PHP notices.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Router/Router-old.php:21	The method dispatch() has a Cyclomatic Complexity of 18. The configured cyclomatic complexity threshold is 10.
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Router/Router-old.php:65	Missing class import via use statement (line '65', column '44').
-/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Router/Router-old.php:72	Missing class import via use statement (line '72', column '44').
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/Game.php:58	The method deliverResult uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/Game.php:104	The method computerPlayGame uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/Game.php:119	The method compareResults uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:86	The method playGame uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:102	Avoid variables with short names like $c. Configured minimum length is 3.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:102	Avoid variables with short names like $c. Configured minimum length is 3.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:103	Avoid unused local variables such as '$key'.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:114	The method newRound uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:145	Avoid unused local variables such as '$trait'.
+/Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php:159	Avoid unused local variables such as '$num'.

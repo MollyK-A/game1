@@ -9,35 +9,33 @@
 declare(strict_types=1);
 
 use FastRoute\RouteCollector;
+use Mos\Controller;
 
-$_SESSION['roll_nr'] = $_SESSION['roll_nr'] ?? 1;
-// if (isset($_POST['newGame'])) {
-//     $_SESSION['matchNumber'] += 1;
-// }
+$router = $router ?? new RouteCollector(
+    new \FastRoute\RouteParser\Std(),
+    new \FastRoute\DataGenerator\MarkBased()
+);
 
 $router->addRoute("GET", "/test", function () {
     // A quick and dirty way to test the router or the request.
     return "Testing response";
 });
 
-$router->addRoute("GET", "/", "\moan20\Controller\Index");
-$router->addRoute("GET", "/debug", "\moan20\Controller\Debug");
-$router->addRoute("GET", "/twig", "\moan20\Controller\TwigView");
-
-
-// $router->addRoute("GET", "/game21?match_nr=" . $_SESSION['matchNumber'], ["\moan20\Controller\Game21", "newGame"]);
-// $router->addRoute("GET", "/game21", ["\moan20\Controller\Game21", "index"]);
+$router->addRoute("GET", "/", "\Mos\Controller\Index");
+$router->addRoute("GET", "/debug", "\Mos\Controller\Debug");
+$router->addRoute("GET", "/twig", "\Mos\Controller\TwigView");
 
 $router->addGroup("/session", function (RouteCollector $router) {
-    $router->addRoute("GET", "", ["\moan20\Controller\Session", "index"]);
-    $router->addRoute("GET", "/destroy", ["\moan20\Controller\Session", "destroy"]);
+    $router->addRoute("GET", "", ["\Mos\Controller\Session", "index"]);
+    $router->addRoute("GET", "/destroy", ["\Mos\Controller\Session", "destroy"]);
 });
 
 $router->addGroup("/some", function (RouteCollector $router) {
-    $router->addRoute("GET", "/where", ["\moan20\Controller\Sample", "where"]);
+    $router->addRoute("GET", "/where", ["\Mos\Controller\Sample", "where"]);
 });
 
 $router->addGroup("/yatzy", function (RouteCollector $router) {
-    $router->addRoute("GET", "", ["\moan20\Controller\Yatzy", "index"]);
-    $router->addRoute("POST", "/newRound", ["\moan20\Controller\Yatzy", "play"]);
+    $router->addRoute("GET", "", ["\Mos\Controller\Yatzy", "index"]);
+    $router->addRoute("POST", "/play", ["\Mos\Controller\Yatzy", "play"]);
+    $router->addRoute("POST", "/newRound", ["\Mos\Controller\Yatzy", "newRound"]);
 });
