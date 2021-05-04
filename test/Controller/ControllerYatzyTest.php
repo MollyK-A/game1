@@ -3,21 +3,13 @@
 declare(strict_types=1);
 
 namespace Mos\Controller;
-// namespace moan20\Dice;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use moan20\Dice\YatzyGame;
 
-/**
- * Test cases for the controller Yatzy.
- */
 class ControllerYatzyTest extends TestCase
 {
-
-    /**
-     * Try to create the controller class.
-     */
     public function testCreateTheControllerClass()
     {
 
@@ -27,9 +19,6 @@ class ControllerYatzyTest extends TestCase
         $this->assertInstanceOf("\Mos\Controller\Yatzy", $controller);
     }
 
-        /**
-     * Check that the controller returns a response.
-     */
     public function testControllerReturnsResponse()
     {
         $controller = new Yatzy();
@@ -37,7 +26,7 @@ class ControllerYatzyTest extends TestCase
     
         $exp = "\Psr\Http\Message\ResponseInterface";
 
-        fwrite(STDERR, print_r($controller, TRUE));
+        fwrite(STDERR, print_r($controller, true));
 
         $res = $controller->index();
 

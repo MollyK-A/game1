@@ -21,6 +21,26 @@ PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 --------------------------------------------------------------------------------------------
 
 
+FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/test/DiceAndYatzy/YatzyGameTest.php
+-----------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------
+ 125 | ERROR | [x] Whitespace found at end of line
+-----------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------
+
+
+FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/test/DiceAndYatzy/DiceTest.php
+------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------
+ 9 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/view/game21.php
 ------------------------------------------------------------------------------
 FOUND 7 ERRORS AFFECTING 5 LINES
@@ -38,10 +58,11 @@ PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/Game.php
---------------------------------------------------------------------------------------------------------
-FOUND 16 ERRORS AFFECTING 15 LINES
---------------------------------------------------------------------------------------------------------
-  12 | ERROR | [ ] The class-based use imports must follow the namespace declaration in the file header
+-----------------------------------------------------------------------------------------------------
+FOUND 15 ERRORS AFFECTING 14 LINES
+-----------------------------------------------------------------------------------------------------
+  12 | ERROR | [ ] The class-based use imports must follow the namespace declaration in the file
+     |       |     header
   12 | ERROR | [x] Import statements must not begin with a leading backslash
   13 | ERROR | [x] Import statements must not begin with a leading backslash
   14 | ERROR | [x] Import statements must not begin with a leading backslash
@@ -51,15 +72,14 @@ FOUND 16 ERRORS AFFECTING 15 LINES
   48 | ERROR | [x] Whitespace found at end of line
   63 | ERROR | [x] Whitespace found at end of line
   74 | ERROR | [x] Whitespace found at end of line
-  76 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
   79 | ERROR | [x] Whitespace found at end of line
   85 | ERROR | [x] Whitespace found at end of line
  109 | ERROR | [x] Whitespace found at end of line
  115 | ERROR | [x] Whitespace found at end of line
  126 | ERROR | [x] Whitespace found at end of line
---------------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 15 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 14 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------------------
 
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/DiceHand.php
@@ -75,26 +95,23 @@ PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/YatzyGame.php
-------------------------------------------------------------------------------------------------------------------------
-FOUND 14 ERRORS AFFECTING 13 LINES
-------------------------------------------------------------------------------------------------------------------------
-  12 | ERROR | [ ] The class-based use imports must follow the namespace declaration in the file header
+-----------------------------------------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 8 LINES
+-----------------------------------------------------------------------------------------------------
+  12 | ERROR | [ ] The class-based use imports must follow the namespace declaration in the file
+     |       |     header
   12 | ERROR | [x] Import statements must not begin with a leading backslash
   13 | ERROR | [x] Import statements must not begin with a leading backslash
   14 | ERROR | [x] Import statements must not begin with a leading backslash
   15 | ERROR | [x] Import statements must not begin with a leading backslash
   32 | ERROR | [x] Whitespace found at end of line
   89 | ERROR | [x] Whitespace found at end of line
- 103 | ERROR | [x] Expected 1 space(s) after FOREACH keyword; 0 found
- 117 | ERROR | [x] Whitespace found at end of line
- 118 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before brace
- 135 | ERROR | [x] Expected 1 space(s) after FOREACH keyword; 0 found
- 145 | ERROR | [x] Expected 1 space(s) after FOREACH keyword; 0 found
- 149 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before brace
- 159 | ERROR | [x] Expected 1 space(s) after FOREACH keyword; 0 found
-------------------------------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 13 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------------------------------------
+ 116 | ERROR | [x] Whitespace found at end of line
+ 148 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank
+     |       |     lines before brace
+-----------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------------------
 
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Dice/GraphicalDice.php
@@ -120,15 +137,14 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: /Users/mollyandersson/dbwebb-kurser/mvc/me/game/src/Controller/Yatzy.php
 ------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 4 LINES
+FOUND 3 ERRORS AFFECTING 3 LINES
 ------------------------------------------------------------------------------
   8 | ERROR | [x] Header blocks must not contain blank lines
- 18 | ERROR | [x] Header blocks must be separated by a single blank line
- 52 | ERROR | [x] Whitespace found at end of line
- 64 | ERROR | [x] Whitespace found at end of line
+ 46 | ERROR | [x] Whitespace found at end of line
+ 58 | ERROR | [x] Whitespace found at end of line
 ------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------
 
-Time: 286ms; Memory: 8MB
+Time: 239ms; Memory: 8MB
 

@@ -2,8 +2,8 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
 
 Warning:       No code coverage driver available
 
-........................                                          24 / 24 (100%)
+................................                                  32 / 32 (100%)
 
-Time: 00:00.347, Memory: 8.00 MB
+Time: 00:00.280, Memory: 8.00 MB
 
-OK (24 tests, 25 assertions)
+OK (32 tests, 42 assertions)

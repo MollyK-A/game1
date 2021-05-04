@@ -1,4 +1,13 @@
 {
+    "name": "moan20/mvc",
+    "description": "MVC course",
+    "license": "proprietary",
+    "authors": [
+            {
+                "name": "Molly Andersson",
+                "email": "molly.k.andersson@live.se"
+            }
+    ],
     "autoload": {
         "psr-4": {
             "Mos\\": "src/",
